@@ -8,14 +8,14 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to right, #d8c49b, #f9e1b2); /* Light brown to light yellow gradient */
+    background-color: #d8c49b; /* Light brown background */
     color: #333; /* Text color */
     transition: background-color 0.3s, color 0.3s;
 }
 
 /* Dark theme styles */
 body.dark-mode {
-    background: linear-gradient(to right, #7a6a57, #c2b58d); /* Darker brown to muted yellow */
+    background-color: #7a6a57; /* Darker brown background */
     color: #f4f4f4; /* Dark theme text color */
 }
 
@@ -47,7 +47,7 @@ main {
 }
 
 section {
-    background: #ffffff; /* Section background */
+    background: #f9e1b2; /* Light yellow background for sections */
     margin: 20px 0;
     padding: 20px;
     border-radius: 8px;
@@ -57,7 +57,7 @@ section {
 
 /* Dark theme section styles */
 body.dark-mode section {
-    background: #333; /* Dark theme section background */
+    background: #5a4e3a; /* Darker section background */
     color: #f4f4f4; /* Dark theme section text color */
 }
 
