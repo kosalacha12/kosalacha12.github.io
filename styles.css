@@ -8,11 +8,17 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background: linear-gradient(to right, #d8c49b, #f9e1b2); /* Light brown to light yellow gradient */
+    color: #333; /* Text color */
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Header styles */
+/* Dark theme styles */
+body.dark-mode {
+    background: linear-gradient(to right, #7a6a57, #c2b58d); /* Darker brown to muted yellow */
+    color: #f4f4f4; /* Dark theme text color */
+}
+
 header {
     background: #35424a;
     color: #ffffff;
@@ -41,11 +47,18 @@ main {
 }
 
 section {
-    background: #ffffff;
+    background: #ffffff; /* Section background */
     margin: 20px 0;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Dark theme section styles */
+body.dark-mode section {
+    background: #333; /* Dark theme section background */
+    color: #f4f4f4; /* Dark theme section text color */
 }
 
 /* Footer styles */
@@ -57,6 +70,52 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Theme switch styles */
+.theme-switch {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 24px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
 }
 
 /* Responsive styles */
