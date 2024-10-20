@@ -22,17 +22,19 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the items */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 15px; /* Add spacing between the links */
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
 }
+
 
 /* Main container styles */
 .container {
