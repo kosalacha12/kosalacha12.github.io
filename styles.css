@@ -35,29 +35,9 @@ nav ul li a {
     text-decoration: none;
 }
 
-
 /* Main container styles */
 .container {
-    display: flex;
     padding: 20px;
-}
-
-/* Vertical slider styles */
-.slider {
-    width: 200px; /* Adjust width as needed */
-    background: #f9e1b2; /* Light yellow */
-    padding: 20px;
-    border-radius: 8px;
-    margin-right: 20px;
-}
-
-.slider-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.slider-content p {
-    margin: 10px 0;
 }
 
 /* Image gallery styles */
@@ -105,17 +85,11 @@ footer {
 
 /* Responsive styles */
 @media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
     .container {
         flex-direction: column;
     }
 
-    .slider {
-        margin-right: 0;
-        margin-bottom: 20px;
+    .image-gallery {
+        margin-top: 20px; /* Spacing for mobile layout */
     }
 }
