@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Page Title</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -16,29 +16,38 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Home Section</h2>
-            <p>This is the home section of the website.</p>
-        </section>
-
-        <section id="about">
-            <h2>About Section</h2>
-            <p>This section contains information about the website.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Section</h2>
-            <p>Here is how you can contact us.</p>
-        </section>
+        <div class="container">
+            <aside class="slider">
+                <!-- Vertical Slider Content -->
+                <h3>Vertical Slider</h3>
+                <div class="slider-content">
+                    <p>Slide 1</p>
+                    <p>Slide 2</p>
+                    <p>Slide 3</p>
+                </div>
+            </aside>
+            <section class="image-gallery">
+                <h2>Image Gallery</h2>
+                <div class="images">
+                    <div class="image-placeholder">Image 1</div>
+                    <div class="image-placeholder">Image 2</div>
+                    <div class="image-placeholder">Image 3</div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
