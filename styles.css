@@ -67,6 +67,8 @@ nav ul li a {
 /* Image gallery styles */
 .image-gallery {
     flex: 1; /* Allow this section to take remaining space */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: calc(100vh - 150px); /* Adjust based on header/footer */
 }
 
 .images {
@@ -89,6 +91,11 @@ nav ul li a {
 /* Dark theme section styles */
 body.dark-mode .image-placeholder {
     background: #5a4e3a; /* Darker background for dark mode */
+}
+
+/* Extra content styles */
+.extra-content {
+    margin-top: 20px; /* Spacing above additional content */
 }
 
 /* Footer styles */
