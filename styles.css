@@ -13,7 +13,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Dark theme styles */
 body.dark-mode {
     background-color: #7a6a57; /* Darker brown background */
     color: #f4f4f4; /* Dark theme text color */
@@ -41,24 +40,55 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Main section styles */
-main {
+/* Main container styles */
+.container {
+    display: flex;
     padding: 20px;
 }
 
-section {
-    background: #f9e1b2; /* Light yellow background for sections */
-    margin: 20px 0;
+/* Vertical slider styles */
+.slider {
+    width: 200px; /* Adjust width as needed */
+    background: #f9e1b2; /* Light yellow */
     padding: 20px;
     border-radius: 8px;
+    margin-right: 20px;
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-content p {
+    margin: 10px 0;
+}
+
+/* Image gallery styles */
+.image-gallery {
+    flex: 1; /* Allow this section to take remaining space */
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-placeholder {
+    background: #ffffff; /* White background for images */
+    flex: 1;
+    margin: 0 10px;
+    height: 150px; /* Set height for image placeholders */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 /* Dark theme section styles */
-body.dark-mode section {
-    background: #5a4e3a; /* Darker section background */
-    color: #f4f4f4; /* Dark theme section text color */
+body.dark-mode .image-placeholder {
+    background: #5a4e3a; /* Darker background for dark mode */
 }
 
 /* Footer styles */
@@ -67,9 +97,6 @@ footer {
     padding: 10px 0;
     background: #35424a;
     color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 /* Theme switch styles */
@@ -123,5 +150,14 @@ input:checked + .slider:before {
     nav ul li {
         display: block;
         margin: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .slider {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
