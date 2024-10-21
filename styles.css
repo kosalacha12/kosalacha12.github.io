@@ -19,6 +19,11 @@ header {
     text-align: center;
 }
 
+.product {
+    margin-bottom: 160px; /* 20 lines of space, assuming line-height is 1.6 */
+}
+
+
 nav ul {
     list-style: none;
     padding: 0;
